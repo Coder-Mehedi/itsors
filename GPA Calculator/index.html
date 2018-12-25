@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>GPA Calculator</title>
+  </head>
+  <body>
+    <div class="m-5">
+      <div class="row">
+      	<div class="col-md-6">
+      		<form id="students-info">
+					  <div class="form-group row">
+					    <label for="studentsName" class="col-sm-3 col-form-label">Students Name</label>
+					    <div class="col-sm-9 mb-2">
+					      <input type="text" class="form-control" id="studentsName" placeholder="Enter Students Name">
+					    </div>
+
+					    <label for="studentsRoll" class="col-sm-3 col-form-label">Students Roll</label>
+					    <div class="col-sm-9">
+					      <input type="text" class="form-control" id="studentsRoll" placeholder="Enter Students Roll Number">
+					    </div>
+  					</div>
+				<hr>
+					  <div class="form-group row">
+					    <label for="bangla" class="col-sm-3 col-form-label mb-2">Bangla</label>
+					    <div class="col-sm-9">
+					      <input type="text" class="form-control" id="bangla" placeholder="">
+					    </div>
+
+					    <label for="english" class="col-sm-3 col-form-label mb-2">English</label>
+					    <div class="col-sm-9">
+					      <input type="text" class="form-control" id="english" placeholder="">
+					    </div>
+
+					    <label for="mathematics" class="col-sm-3 col-form-label mb-2">Mathematics</label>
+					    <div class="col-sm-9">
+					      <input type="text" class="form-control" id="mathematics" placeholder="">
+					    </div>
+
+					    <label for="science" class="col-sm-3 col-form-label mb-2">Science</label>
+					    <div class="col-sm-9">
+					      <input type="text" class="form-control" id="science" placeholder="">
+					    </div>
+
+					    <label for="bangladesh-and-global-studies" class="col-sm-3 col-form-label">Bangladesh And Global Studies</label>
+					    <div class="col-sm-9">
+					      <input type="text" class="form-control mt-2" id="bangladesh-and-global-studies" placeholder="">
+					    </div>
+
+					    <label for="islam-and-moral-education" class="col-sm-3 col-form-label">Islam And Moral Education</label>
+					    <div class="col-sm-9">
+					      <input type="text" class="form-control mt-2" id="islam-and-moral-education" placeholder="">
+					    </div>
+
+					    <label for="ict" class="col-sm-3 col-form-label">Information And Communication Technology</label>
+					    <div class="col-sm-9">
+					      <input type="text" class="form-control mt-4" id="ict" placeholder="">
+					    </div>
+
+  					</div>
+  					<!-- Submit Button -->
+					  <div class="form-group row justify-content-center">
+					    <div class="col-md-6">
+					      <button type="submit" class="btn btn-outline-info px-5 btn-lg">Submit</button>
+					    </div>
+					  </div>
+				</form>
+      	</div>
+      	<div class="col-md-6">
+      		<div class="students-name-roll">
+      			<h5>Student Name: <span id="student-name"></span></h5>
+      			<h5>Student Roll: <span id="student-roll"></span></h5>
+      		</div>
+
+					<div class="table-section mt-5">
+						<table class="table table-hover table-bordered" id="detailsTable">
+						  <thead>
+						    <tr>
+						      <th scope="col">SL</th>
+						      <th scope="col">Subject</th>
+						      <th scope="col">Marks</th>
+						      <th scope="col">GPA</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr id="tBangla">
+						      <th scope="row">1</th>
+						      <td>Bangla</td>
+						      <td></td>
+						      <td></td>
+						    </tr>
+						    <tr id="tEnglish">
+						      <th scope="row">2</th>
+						      <td>English</td>
+						      <td></td>
+						      <td></td>
+						    </tr>
+						    <tr id="tMath">
+						      <th scope="row">3</th>
+						      <td>Mathematics</td>
+						      <td></td>
+						      <td></td>
+						    </tr>
+						    <tr id="tScience">
+						      <th scope="row">4</th>
+						      <td>Science</td>
+						      <td></td>
+						      <td></td>
+						    </tr>
+						    <tr id="tGlobalStudies">
+						      <th scope="row">5</th>
+						      <td>Bangladesh And Global Studies</td>
+						      <td></td>
+						      <td></td>
+						    </tr>
+						    <tr id="tIslam">
+						      <th scope="row">6</th>
+						      <td>Islam And Moral Education</td>
+						      <td></td>
+						      <td></td>
+						    </tr>
+						    <tr id="tIct">
+						      <th scope="row">7</th>
+						      <td>Information And Communication Technology</td>
+						      <td></td>
+						      <td></td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>		<!-- end of table section -->
+					<h4>Total Marks: <span id="total-mark"></span></h4>
+					<h4>GPA: <span id="gpa-point"></span></h4>
+      	</div>
+      </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
